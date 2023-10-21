@@ -6,14 +6,14 @@ Este é um projeto de API CRUD que permite criar, ler, atualizar e excluir pergu
 
 Antes de executar o projeto, certifique-se de ter instalado o Node.js, o MongoDB e as dependências listadas no arquivo `package.json`.
 
-```shell
+```node
 npm install
 ```
 
 ## Configuração
 O projeto utiliza variáveis de ambiente para configurar a conexão com o MongoDB. Crie um arquivo .env na raiz do projeto e defina as seguintes variáveis:
 ```
-MONGODB_PASS=sua_senha_do_MongoDB
+MONGODB_URI=sua_uri_do_MongoDB (com senha e usuario)
 PORT=3000
 ```
 
