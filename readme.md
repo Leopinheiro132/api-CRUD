@@ -19,16 +19,16 @@ PORT=3000
 
 
 ## Estrutura do Projeto
-`app.js`: O arquivo principal da aplicação que configura o servidor Express e define as rotas CRUD.
-`models/models.js`: Define o modelo do MongoDB para perguntas e respostas.
-`routes/routes.js`: Define as rotas da API.
-`package.json`: Arquivo de manifesto do Node.js com as dependências do projeto.
+`app.js`: O arquivo principal da aplicação que configura o servidor Express e define as rotas CRUD.</br>
+`models/models.js`: Define o modelo do MongoDB para perguntas e respostas.</br>
+`routes/routes.js`: Define as rotas da API.</br>
+`package.json`: Arquivo de manifesto do Node.js com as dependências do projeto.</br>
 ### Uso:
 
-GET "/": Retorna todas as perguntas.
+`GET` "/": Retorna todas as perguntas.
 
-POST "/": Cria uma nova pergunta.
+`POST` "/": Cria uma nova pergunta.
 
-DELETE "/:id": Exclui uma pergunta por ID.
+`DELETE` "/:id": Exclui uma pergunta por ID.
 
-PUT "/:id": Atualiza uma pergunta por ID.
+`PUT` "/:id": Atualiza uma pergunta por ID.
