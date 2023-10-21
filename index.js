@@ -7,7 +7,7 @@ const Pergunta = require('./model\'s/models');
 dotenv.config();
 const app = express();
 
-mongoose.connect(`mongodb+srv://mandarim:${process.env.MONGODB_PASS}@teste.knxnpxi.mongodb.net/`, {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
