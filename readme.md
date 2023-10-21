@@ -31,7 +31,7 @@ PORT=3000
 `PUT` "/:id": Atualiza uma pergunta por ID.</br>
 
 ## Exemplo de Uso
-`POST` http://localhost:3000/
+`POST:` http://localhost:3000/
 Criar uma nova pergunta:
 ```
 Body:
@@ -51,7 +51,7 @@ Body:
 }
 ```
 
-`PUT` http://localhost:3000/ id da pergunta gerada pelo banco
+`PUT:` http://localhost:3000/ id da pergunta gerada pelo banco
 Atualizar uma pergunta existente:
 ```
 Body:
@@ -68,10 +68,12 @@ Body:
     }
   ]
 }
-```</br>
-`DELETE` http://localhost:3000/
+```
+
+`DELETE:` http://localhost:3000/
 Excluir uma pergunta por ID:
 
 ```
 http://localhost:3000/1
+
 ```
