@@ -25,10 +25,53 @@ PORT=3000
 `package.json`: Arquivo de manifesto do Node.js com as dependências do projeto.</br>
 ### Uso:
 
-`GET` "/": Retorna todas as perguntas.
+`GET` "/": Retorna todas as perguntas.</br>
+`POST` "/": Cria uma nova pergunta.</br>
+`DELETE` "/:id": Exclui uma pergunta por ID.</br>
+`PUT` "/:id": Atualiza uma pergunta por ID.</br>
 
-`POST` "/": Cria uma nova pergunta.
+## Exemplo de Uso
+`POST` http://localhost:3000/
+Criar uma nova pergunta:
+```
+Body:
+{
+  "id": 1,
+  "texto": "Qual é a capital da França?",
+  "alternativas": [
+    {
+      "alternativaText": "Paris",
+      "correta": true
+    },
+    {
+      "alternativaText": "Londres",
+      "correta": false
+    }
+  ]
+}
+```
 
-`DELETE` "/:id": Exclui uma pergunta por ID.
+`PUT` http://localhost:3000/ id da pergunta gerada pelo banco
+Atualizar uma pergunta existente:
+```
+Body:
+{
+  "texto": "Qual é a capital da Itália?",
+  "alternativas": [
+    {
+      "alternativaText": "Roma",
+      "correta": true
+    },
+    {
+      "alternativaText": "Londres",
+      "correta": false
+    }
+  ]
+}
+```</br>
+`DELETE` http://localhost:3000/
+Excluir uma pergunta por ID:
 
-`PUT` "/:id": Atualiza uma pergunta por ID.
+```
+http://localhost:3000/1
+```
