@@ -1,6 +1,6 @@
 # API CRUD de Perguntas e Respostas
 
-Este é um projeto de API CRUD que permite criar, ler, atualizar e excluir perguntas e respostas. A API é construída usando o Node.js, Express e MongoDB.
+Este é um projeto de API CRUD que permite criar, ler, atualizar e excluir perguntas e respostas. A API é construída usando o Node.js, Nodemon, Express e MongoDB.
 
 ## Pré-requisitos
 
@@ -15,6 +15,14 @@ O projeto utiliza variáveis de ambiente para configurar a conexão com o MongoD
 ```
 MONGODB_URI=sua_uri_do_MongoDB (com senha e usuario)
 PORT=3000
+```
+
+## Para o inicio
+
+Antes de executar o projeto, certifique-se de ter tudo instalado, para executar so rodar o codigo abaixo na terminal
+
+```node
+npm start
 ```
 
 
